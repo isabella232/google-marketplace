@@ -19,6 +19,10 @@ Your Kong Enterprise 2.1 is deployed and available. Now you need to inject you K
 
  Click "SSH" to open a terminal.
 
+![Terminal](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/Terminal.png)
+
+
+
  
 
 
