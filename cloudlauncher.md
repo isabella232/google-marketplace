@@ -30,14 +30,17 @@ sudo cp /etc/kong/kong.conf.default /etc/kong/kong.conf
 </pre>
 
 
-sudo vi /etc/kong/kong.conf
-
-update kong.conf with the following:
+2. Update <b>kong.conf</b>
+ 
+ <pre>
+ sudo vi /etc/kong/kong.conf
+</pre>
 
 In the NGINX section
+<pre>
 admin_api_uri = http://<vm-IPv4 Public IP>:8001
 admin_listen = 0.0.0.0:8001 reuseport backlog=16384, 0.0.0.0:8444 http2 ssl reuseport backlog=16384
-
+</pre>
 
 
 In the DATASTORE section
