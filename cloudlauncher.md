@@ -9,7 +9,7 @@ Click "Launch"
 
 ![KongDeployment](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongDeployment.png)
 
-After choosing the Project, Deployment Name, Zone, Machine Type, Boot Disk and Network settings click "Deploy".
+After choosing the Project, Deployment Name, Zone, Machine Type, Boot Disk and Network settings click "Deploy". We recommend to use a static External IP Address.
 
 ![KongDeployment2](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongDeployment2.png)
 
@@ -42,30 +42,34 @@ admin_api_uri = http://<vm-IPv4 Public IP>:8001
 admin_listen = 0.0.0.0:8001 reuseport backlog=16384, 0.0.0.0:8444 http2 ssl reuseport backlog=16384
 </pre>
 
-
 In the DATASTORE section
+<pre>
 database = postgres
 
 pg_user = kong
 pg_password = kong
 pg_database = kong
-
-
+</pre>
 
 In the KONG MANAGER section
+<pre>
 admin_gui_listen = 0.0.0.0:8002, 0.0.0.0:8445 ssl
 admin_gui_url = http://<vm-IPv4 Public IP>:8002
+</pre>
 
 
+3. Copy your license.json file in the /etc/kong directory
 
+4. Bootstrap the database
+<pre>
+sudo /usr/local/bin/kong migrations bootstrap -c /etc/kong/kong.conf
+</pre>
 
-2. Copy your license.json file in the /etc/kong directory
+4. Start Kong Enterprise
+<pre>
+sudo /usr/local/bin/kong start -c /etc/kong/kong.conf
+</pre>
 
-
-
-3. Run "sudo /usr/local/bin/kong migrations bootstrap -c /etc/kong/kong.conf"
-
-4. Start Kong Enterprise with "sudo /usr/local/bin/kong start -c /etc/kong/kong.conf"
 
 Please modify the network settings to allow and disallow certain HTTP/HTTPS protocols.
 
