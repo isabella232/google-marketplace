@@ -84,6 +84,7 @@ curl http://localhost:8001
 </pre>
 
 8. Check Kong Manager
+<p>
 Redirect your browser to
 <pre>
 http://<vm-IPv4 Public IP>:8002
