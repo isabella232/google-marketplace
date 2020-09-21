@@ -1,4 +1,4 @@
-Google Cloud Launcher
+# Google Cloud Launcher
 Deploying
 First off we're going to deploy a cluster. That's really easy with Cloud Launcher. Simply go to https://console.cloud.google.com/launcher/details/datastax-public/datastax-enterprise
 
