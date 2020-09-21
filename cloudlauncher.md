@@ -1,6 +1,9 @@
 # Google Cloud Launcher
-Deploying
-First off we're going to deploy a cluster. That's really easy with Cloud Launcher. Simply go to https://console.cloud.google.com/launcher/details/datastax-public/datastax-enterprise
+
+## Deploying
+
+To deploy Kong Enterprise use Google Cloud Launcher located at https://console.cloud.google.com/launcher/details/konghq-public/kongenterprise21
+![GoogleCloudLauncher](https://github.com/Kong/gcp-marketplace/blob/master/screenshots/GoogleCloudLaucher.png)
 
 
 
