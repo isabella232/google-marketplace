@@ -38,7 +38,7 @@ sudo cp /etc/kong/kong.conf.default /etc/kong/kong.conf
 
 In the NGINX section
 <pre>
-admin_api_uri = http://&lt;vm-IPv4 Public IP&gt;:8001
+admin_api_uri = http://&lt;vm-Public IP&gt;:8001
 admin_listen = 0.0.0.0:8001 reuseport backlog=16384, 0.0.0.0:8444 http2 ssl reuseport backlog=16384
 </pre>
 
@@ -54,7 +54,7 @@ pg_database = kong
 In the KONG MANAGER section
 <pre>
 admin_gui_listen = 0.0.0.0:8002, 0.0.0.0:8445 ssl
-admin_gui_url = http://&lt;vm-IPv4 Public IP&gt;:8002
+admin_gui_url = http://&lt;vm-Public IP&gt;:8002
 </pre>
 
 
@@ -87,7 +87,7 @@ curl http://localhost:8001
 <p>
 Redirect your browser to
 <pre>
-http://&lt;vm-IPv4 Public IP&gt;:8002
+http://&lt;vm-Public IP&gt;:8002
 </pre>
 ![KongManager](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongManager.png)
 
