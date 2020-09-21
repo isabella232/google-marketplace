@@ -89,6 +89,7 @@ Redirect your browser to
 <pre>
 http://&lt;vm-Public IP&gt;:8002
 </pre>
+
 ![KongManager](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongManager.png)
 
 
