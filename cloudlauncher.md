@@ -70,80 +70,34 @@ sudo /usr/local/bin/kong migrations bootstrap -c /etc/kong/kong.conf
 sudo /usr/local/bin/kong start -c /etc/kong/kong.conf
 </pre>
 
-
-Please modify the network settings to allow and disallow certain HTTP/HTTPS protocols.
-
-
-
-
-
-
-
-
-
-
-
-Starting Kong Enterprise
-Edit the /etc/environment file
-
-sudo vi /etc/environment
-
-add these lines
-LANGUAGE=en_US.utf-8
-LC_ALL=en_US.UTF-8
-LC_CTYPE=UTF-8
-LANG=en_US.utf-8
-
-Exit the terminal and login again
-
-In your $HOME directory change the .bashrc file adding the following line in the end:
-ulimit -n 4096
-
-Edit kong.conf file
-sudo cp /etc/kong/kong.conf.default /etc/kong/kong.conf
-sudo vi /etc/kong/kong.conf
-
-update kong.conf with:
-pg_host = 1.2.3.4 (use the PosgreSQL host IP)
-pg_user = kong
-pg_password = kong
-admin_listen = 0.0.0.0:8001, 0.0.0.0:8444 ssl
-
-
-Edit the license file
-sudo vi /etc/kong/license.json
-{"license":{"signature":"36be3821628dc14259433b157036d5b6ebb79530a4109f2960b22ab9861be73270cf1d714cca045204a7d9b1be39d797c3213c76ae91e6c64262d870c4979d1c","payload":{"customer":"Kong_SE_Demo","license_creation_date":"2019-11-03","product_subscription":"Kong Enterprise Edition","admin_seats":"5","support_plan":"None","license_expiration_date":"2020-12-12","license_key":"0011K000022IA3HQAW_a1V1K000007KlJMUA0"},"version":1}}
-
-
-
-sudo chmod -R 777 /usr/local/kong
-
-
-Define Kong Admin password
-export KONG_PASSWORD=kong
-
-Initialize Kong's database
-sudo /usr/local/bin/kong migrations bootstrap -c /etc/kong/kong.conf
-
-Start Kong
-sudo /usr/local/bin/kong start -c /etc/kong/kong.conf
-
-Check if Kong is running
+5. Check Kong Enterprise status
+<pre>
 $ sudo /usr/local/bin/kong health
 nginx.......running
 
 Kong is healthy at /usr/local/kong
+</pre>
+
+6. Send a request to Kong
+<pre>
+curl http://localhost:8001
+</pre>
+
+7. Check Kong Manager
+Redirect your browser to
+<pre>
+http://<vm-IPv4 Public IP>:8002
+</pre>
+![KongManager](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongManager.png)
 
 
-Send a request to Kong
-curl -i http://localhost:8001
-http :8001
-http --verify=no https://localhost:8443
-http --verify=no https://localhost:8444
 
+Please modify the network settings to allow and disallow certain HTTP/HTTPS protocols.
 
 If you want to stop Kong, run:
+<pre>
 sudo kong stop
+</pre>
 
 
 
