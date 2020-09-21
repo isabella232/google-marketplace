@@ -5,11 +5,13 @@
 To deploy Kong Enterprise use Google Cloud Launcher located at https://console.cloud.google.com/launcher/details/konghq-public/kongenterprise21
 ![GoogleCloudLauncher](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/GoogleCloudLauncher.png)
 
-Click "Launch on Compute Engine"
+Click "Launch"
+
+![KongDeployment](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongDeployment.png)
+
+After choosing the Zone and Machine Type click "Deploy".
 
 
-
-You can take the default settings or customize them. When complete click "Deploy"
 
 
 
