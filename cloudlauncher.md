@@ -65,12 +65,12 @@ admin_gui_url = http://<vm-IPv4 Public IP>:8002
 sudo /usr/local/bin/kong migrations bootstrap -c /etc/kong/kong.conf
 </pre>
 
-4. Start Kong Enterprise
+5. Start Kong Enterprise
 <pre>
 sudo /usr/local/bin/kong start -c /etc/kong/kong.conf
 </pre>
 
-5. Check Kong Enterprise status
+6. Check Kong Enterprise status
 <pre>
 $ sudo /usr/local/bin/kong health
 nginx.......running
@@ -78,12 +78,12 @@ nginx.......running
 Kong is healthy at /usr/local/kong
 </pre>
 
-6. Send a request to Kong
+7. Send a request to Kong
 <pre>
 curl http://localhost:8001
 </pre>
 
-7. Check Kong Manager
+8. Check Kong Manager
 Redirect your browser to
 <pre>
 http://<vm-IPv4 Public IP>:8002
