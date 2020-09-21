@@ -9,7 +9,7 @@ Click "Launch"
 
 ![KongDeployment](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongDeployment.png)
 
-After choosing the Zone and Machine Type click "Deploy".
+After choosing the Project, Zone and Machine Type click "Deploy".
 
 
 
