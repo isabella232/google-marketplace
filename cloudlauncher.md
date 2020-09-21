@@ -22,6 +22,8 @@ Your Kong Enterprise 2.1 is deployed and available. Now you need to inject you K
 ![Terminal](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/Terminal.png)
 
 
+## Kong Enterprise Configuration
+
 Proceed with the following steps:
 
 1. Copy <b>kong.conf</b> configuration file
@@ -102,6 +104,10 @@ sudo kong stop
 </pre>
 
 
+
+## Next Steps
+
+If you want to learn more about Kong Enterprise, the official documentation is at https://docs.konghq.com/enterprise
 
 
 
