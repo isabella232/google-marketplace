@@ -24,11 +24,13 @@ Your Kong Enterprise 2.1 is deployed and available. Now you need to inject you K
 
 Proceed with the following steps:
 
+1. Copy <b>kong.conf</b> configuration file
 <pre>
 sudo cp /etc/kong/kong.conf.default /etc/kong/kong.conf
-sudo vi /etc/kong/kong.conf
 </pre>
 
+
+sudo vi /etc/kong/kong.conf
 
 update kong.conf with the following:
 
