@@ -13,7 +13,13 @@ After choosing the Project, Deployment Name, Zone, Machine Type, Boot Disk and N
 
 ![KongDeployment2](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongDeployment2.png)
 
+Your Kong Enterprise 2.1 is deployed and available. Now you need to inject you Kong Enterprise 2.1 license to get it running.
 
+![SSH](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/SSH.png)
+
+ Click "SSH" to open a terminal.
+
+ 
 
 
 That's it! Your cluster is now deploying.
