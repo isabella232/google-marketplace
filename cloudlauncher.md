@@ -87,7 +87,7 @@ curl http://localhost:8001
 <p>
 Redirect your browser to
 <pre>
-http://\<vm-IPv4 Public IP\>:8002
+`http://<vm-IPv4 Public IP>:8002`
 </pre>
 ![KongManager](https://github.com/Kong/gcp-marketplace/blob/main/screenshots/KongManager.png)
 
