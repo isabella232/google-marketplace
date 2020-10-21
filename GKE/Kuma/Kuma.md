@@ -7,8 +7,8 @@ For more information about the template, please refer to: https://www.terraform.
 
 #  Installation Process
 
-## Step 1: Install Azure CLI and Terraform
-Open a terminal and install Azure CLI as described [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+## Step 1: Install Google Cloud SDK and Terraform
+Open a terminal and install Google Cloud SDK as described [here](https://cloud.google.com/sdk/docs/install)
 
 The Terraform installation process is documented [here](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
