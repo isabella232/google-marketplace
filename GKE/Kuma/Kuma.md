@@ -14,7 +14,7 @@ The Terraform installation process is documented [here](https://learn.hashicorp.
 
 
 ## Step 2: Download Terraform Provider Azure Resource Manager repository
-![TerraformProvider](https://github.com/Kong/azure-marketplace/blob/master/Kuma/screenshots/github.png)
+![TerraformProvider](https://github.com/Kong/azure-marketplace/blob/master/Kuma/resources/github.png)
 
 
 ## Step 3: Login to Azure
@@ -371,7 +371,7 @@ Forwarding from [::1]:5681 -> 5681
 </pre>
 
 Redirect your browser to http://localhost:5681/gui and click on <b>Skip to Dashboard</b>
-![KumaGUI](https://github.com/Kong/azure-marketplace/blob/master/Kuma/screenshots/gui.png)
+![KumaGUI](https://github.com/Kong/azure-marketplace/blob/master/Kuma/resources/gui.png)
 
 
 ## Kuma official documentation
