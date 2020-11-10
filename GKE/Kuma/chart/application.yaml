@@ -4,13 +4,13 @@
 apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
-  name: "wordpress-01"
+  name: "kuma"
   labels:
-    app.kubernetes.io/name: "wordpress-01"
+    app.kubernetes.io/name: "kuma"
 spec:
   selector:
     matchLabels:
-     app.kubernetes.io/name: "wordpress-01"
+     app.kubernetes.io/name: "kuma"
   componentKinds:
     - group: v1
       kind: Service
@@ -18,30 +18,16 @@ spec:
       kind: StatefulSet
   addOwnerRef: true
   descriptor:
-    type: "wordpress"
+    type: "kuma"
     keywords:
       - "cms"
       - "blog"
       - "wordpress"
     links:
       - description: About
-        url: "https://wordpress.org/"
-      - description: Web Server Dashboard
-        url: "https://metrics/internal/wordpress-01/web-app"
-      - description: Mysql Dashboard
-        url: "https://metrics/internal/wordpress-01/mysql"
-    version: "4.9.4"
-    description: "WordPress is open source software you can use to create a beautiful website, blog, or app."
+        url: "https://kuma.io/"
+    version: "0.7"
+    description: "Kuma is the open-source control plane for service mesh, delivering high performance and reliability with Envoy"
     icons:
-      - src: "https://s.w.org/style/images/about/WordPress-logotype-wmark.png"
+      - src: "https://github.com/Kong/gcp-marketplace/blob/main/GKE/Kuma/screenshots/kuma.jpeg"
         type: "image/png"
-        size: "1000x1000"
-      - src: "https://s.w.org/style/images/about/WordPress-logotype-standard.png"
-        type: "image/png"
-        size: "2000x680"
-    maintainers:
-      - name: Wordpress Dev
-        email: dev@wordpress.org
-    owners:
-      - name: Wordpress Admin
-        email: admin@wordpress.org
