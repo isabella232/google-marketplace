@@ -1,1 +1,1 @@
-# gcp-marketplace
+# google-marketplace
